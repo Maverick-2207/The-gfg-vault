@@ -6,12 +6,18 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    void printGfg(int N) {
+    int printGfg(int N) {
         // Code here
         
-        for(int i=0;i<N;i++){
+        if(N==1){
             cout<<"GFG"<<" ";
         }
+        
+        else{
+            cout<<"GFG"<<" ";
+            printGfg(N-1);
+        }
+        
     }
 };
 
