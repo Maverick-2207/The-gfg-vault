@@ -27,7 +27,7 @@ class Array {
 class Solution {
 public:
     // Function to perform selection sort on the given array.
-    void selectionSort(std::vector<int>& arr) {
+    void selectionSort(vector<int>& arr) {
         int n = arr.size();
         for (int i = 0; i < n - 1; i++) {
             int minIndex = i;
@@ -37,7 +37,7 @@ public:
                 }
             }
             if (minIndex != i) {
-                std::swap(arr[i], arr[minIndex]);
+                swap(arr[i], arr[minIndex]);
             }
         }
     }
